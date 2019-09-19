@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ex04_AlertDialog</string>
+    <array name="colors">
+        <item>RED</item>
+        <item>BLUE</item>
+        <item>GREEN</item>
+    </array>
+</resources>

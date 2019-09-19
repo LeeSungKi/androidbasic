@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ex02</string>
+
+    <array name="email_suffix">
+        <item>gmail.com</item>
+        <item>naver.com</item>
+        <item>nate.com</item>
+        <item>hanmail.com</item>
+    </array>
+</resources>

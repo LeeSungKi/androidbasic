@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieActivity">
+
+    <TextView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movie Top 10!"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textFontWeight="1"
+        android:gravity="center"
+        android:padding="20dp"
+        android:background="#1a0e15"
+    />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view"
+        android:layout_below="@id/title_bar"/>
+
+    <Button
+        android:id="@+id/dt_btn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="DATE"
+        android:textColor="#FFF"
+        android:background="@drawable/circluar_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/list_view"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>

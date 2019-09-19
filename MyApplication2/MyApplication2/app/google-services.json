@@ -1,0 +1,40 @@
+ {
+  "project_info": {
+    "project_number": "811741143669",
+    "firebase_url": "https://sunggi-app.firebaseio.com",
+    "project_id": "sunggi-app",
+    "storage_bucket": "sunggi-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811741143669:android:13c3c6a65bcbec53",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811741143669-ei8p6h88n96atcpo4bp4tm723lb315gh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdiRguYNlwg4-VRRJssit2MSkaaeN_lgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811741143669-ei8p6h88n96atcpo4bp4tm723lb315gh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

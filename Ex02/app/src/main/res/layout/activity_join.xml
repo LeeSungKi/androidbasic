@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".JoinActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="30sp"
+            android:text="회원가입"
+            android:textColor="#8A00"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/join_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID를 입력하세요."/>
+
+            <EditText
+                android:id="@+id/join_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="PASSWORD를 입력하세요."/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/join_email_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="E-MAIL을 입력하세요."/>
+                <Spinner
+                    android:id="@+id/join_email_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/email_suffix"></Spinner>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성별"
+                android:layout_marginTop="10dp"/>
+            <RadioGroup
+                android:id="@+id/join_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="남성"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="여성"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수강 희망 과목"
+                android:layout_marginTop="10dp"/>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:rowCount="2"
+                android:columnCount="4">
+
+                <CheckBox
+                    android:id="@+id/join_sub1"
+                    android:text="JAVA"/>
+                <CheckBox
+                    android:id="@+id/join_sub2"
+                    android:text="JSP"/>
+                <CheckBox
+                    android:id="@+id/join_sub3"
+                    android:text="Spring Framework"/>
+                <CheckBox
+                    android:id="@+id/join_sub4"
+                    android:text="Android"/>
+                <CheckBox
+                    android:id="@+id/join_sub5"
+                    android:text="C"/>
+                <CheckBox
+                    android:id="@+id/join_sub6"
+                    android:text="C++"/>
+                <CheckBox
+                    android:id="@+id/join_sub7"
+                    android:text="C#"/>
+
+                <CheckBox
+                    android:id="@+id/join_sub8"
+                    android:text="Python"/>
+
+
+            </GridLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/join_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#3A00"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:text="JOIN"/>
+
+
+
+</RelativeLayout>
